@@ -1,0 +1,55 @@
+/*Estilos para todas las etiquetas <body>
+En realidad sólo hay una etiqueta de este tipo*/
+
+body {
+    background-color: rgb(224, 209, 158);
+}
+
+
+/*Estilos para todas las tags <h1>*/
+
+h1 {
+    border: 1px solid rgb(46, 199, 166);
+    box-sizing: border-box;
+    color: gray;
+}
+
+
+/*Estilos para todas tags de tipo <img>*/
+
+img {
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
+/*Estilo para todas las tags que tengas esta clase
+Aquí se definen los estilos para las TARJETAS*/
+
+.tarjeta {
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 8px rgba(150, 148, 148, 0.8);
+}
+
+
+/*Estilo para todas las tags que tengas esta clase
+Aquí se definen los estilos para el PROFILE*/
+
+.profile {
+    width: 30%;
+    text-align: center;
+    float: left;
+}
+
+
+/*Estilo para todas las tags que tengas esta clase
+Aquí se definen los estilos para la BIO*/
+
+.bio {
+    width: 50%;
+    text-align: justify;
+    float: right;
+}
