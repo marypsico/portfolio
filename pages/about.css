@@ -3,21 +3,14 @@ En realidad sólo hay una etiqueta de este tipo*/
 
 body {
     background-color: rgb(224, 209, 158);
-}
-
-
-/*Estilos para todas las tags <h1>*/
-
-h1 {
-    border: 1px solid rgb(46, 199, 166);
-    box-sizing: border-box;
-    color: gray;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 /*Estilos para todas tags de tipo <img>*/
 
-img {
+#profile-img {
     border-radius: 5px;
     margin: 10px;
 }
@@ -31,7 +24,11 @@ Aquí se definen los estilos para las TARJETAS*/
     margin: 20px;
     padding: 10px;
     border-radius: 10px;
+    font-size: 16px;
     box-shadow: 0px 8px 8px rgba(150, 148, 148, 0.8);
+
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 
@@ -39,35 +36,49 @@ Aquí se definen los estilos para las TARJETAS*/
 Aquí se definen los estilos para el PROFILE*/
 
 .profile {
-    width: 30%;
+    width: 300px;
     text-align: center;
-    float: left;
 }
+
+@media(max-width: 800px){
+    .profile{
+        width: 600px;
+    }
+
+    #profile-img{
+        width: 300px;
+        height: 450px;
+    }
+    
+}
+
 
 
 /*Estilo para todas las tags que tengas esta clase
 Aquí se definen los estilos para la BIO*/
 
 .bio {
-    width: 50%;
+    width: 500px;
     text-align: justify;
-    float: right;
 }
+
+
 /*Tabla*/
-table, td, th { 
+
+table, td, th {
     /* border: blue 1px solid; */
     border-color: gray;
     border-width: 1px;
     border-style: solid;
     border-collapse: collapse;
     background-color: rgb(248, 242, 242);
-    
- }
- div.centraTabla{
+}
+
+div.centraTabla {
     text-align: center;
-    }
-    
-    div.centraTabla table {
+}
+
+div.centraTabla table {
     margin: 0 auto;
     text-align: left;
-    }
+}
